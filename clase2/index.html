@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gimnasio</title>
+    <title>Gimnasio Gervasio</title>
   </head>
+  <header>
+    <nav>
+      <a href="index.html">Indice</a>
+      <a href="gatitos.html">Click aquí para sorpresa</a>
+    </nav>
+  </header>
   <body>
     <table>
-      <tr>
+      <tr class="hl">
         <td colspan="3"><b>Invoice #123456789 </b></td>
-        <td>January 15 2025</td>
+        <td><b>January 15 2025</b></td>
       </tr>
       <tr>
         <td colspan="2">
@@ -20,44 +26,75 @@
           Cityville, NA 12345<br />
         </td>
         <td colspan="2">
-          <b>Pay to:</b><br />
-          Acme Billing Co <br />
-          123 Main st <br />
-          Cityville, NA 12345<br />
+          <b>Customer:</b><br />
+          John Smith <br />
+          321 Calle Falsa <br />
+          Springfield, USA<br />
         </td>
       </tr>
-      <tr>
-        <td>Name / Description</td>
-        <td>Qty</td>
-        <td>@</td>
-        <td>Cost</td>
+      <tr class="hl">
+        <td><b>Name / Description</b></td>
+        <td><b>Qty</b></td>
+        <td><b>@</b></td>
+        <td><b>Cost</b></td>
       </tr>
       <tr>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
+        <td>Paperclips</td>
+        <td>1000</td>
+        <td>0.01</td>
+        <td>10.00</td>
       </tr>
       <tr>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
+        <td>Staples(box)</td>
+        <td>100</td>
+        <td>1.00</td>
+        <td>100.00</td>
       </tr>
-      
+      <tr>
+        <td colspan="3" class="hl"><b>Subtotal</b></td>
+        <td>110.00</td>
+      </tr>
+      <tr>
+        <td colspan="2"class="hl"><b>Tax</b></td>
+        <td>8%</td>
+        <td>8.80</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="hl"><b>Grand Total</b></td>
+        <td>$ 118.80</td>
+      </tr>
     </table>
   </body>
 </html>
 
 <style>
+  header{
+    width:600px;
+    margin: 30px auto
+  }
+  header nav{
+    display:flex;
+    justify-content: space-between;
+  }
+  body{
+    max-width: 600px;
+    margin: 0 auto;
+  }
   td,tr,table{
     border: 1px solid black;
     border-collapse: collapse;
   }
   table{
-      width:600px
+      width:600px;
     }
   td{
-      width:150px
+      width:150px;
+      padding:5px;
       }
+  .hl{
+    background-color: #e8e9ed
+    }
+
+  a{color: #000;
+  text-decoration: none;}
 </style>

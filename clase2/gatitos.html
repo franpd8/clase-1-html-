@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorpresa Gatitos</title>
+  </head>
+  <header>
+    <nav>
+      <a href="index.html">Indice</a>
+      <a href="gatitos.html" style="color:white">Click aquí para sorpresa</a>
+    </nav>
+  </header>
+
+  <body>
+    <audio autoplay loop muted>
+      <source src="assets/cat-sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <nav>
+        <a href="#fotos">Más fotos</a>
+        <a href="#videos">Más videos</a>
+      </nav>
+    <table>
+      <tr>
+        <td colspan="2">
+          <video width="600" autoplay loop>
+            <source src="assets/vid-top.mp4" type="video/mp4" />
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="assets/img-cat.jpg" width ="298" height="528.95">
+        </td>
+        <td>
+          <video width="298" autoplay loop>
+            <source src="assets/vid-right.mp4" type="video/mp4" />
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <video width="600" autoplay loop>
+            <source src="assets/vid-bot.mp4" type="video/mp4" />
+          </video>
+        </td>
+      </tr>
+    </table>
+    <section class="cat-gallery">
+        <h2 id="fotos">Más fotos de gatitos</h2>
+        <table>
+            <tr>
+                <td><img src="assets/cat0.png" width="199"></td>
+                <td><img src="assets/cat1.png" width="199"></td>
+                <td><img src="assets/cat2.png" width="199"></td>
+            </tr>
+            <tr>
+                <td><img src="assets/cat3.png" width="199"></td>
+                <td><img src="assets/cat4.png" width="199"></td>
+                <td><img src="assets/cat5.png" width="199"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+    </section>
+    <section class="cat-videos">
+      <h2 id="videos">Más videos de gatitos</h2>
+      <table>
+          <tr>
+              <td>
+                <video width="600" autoplay loop>
+                    <source src="assets/vid-1.mp4" type="video/mp4" />
+                  </video>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <video width="600" autoplay loop>
+                    <source src="assets/vid-2.mp4" type="video/mp4" />
+                  </video>
+              </td>
+          </tr>
+      </table>
+    </section>
+    
+
+
+  </body>
+</html>
+<style>
+  header{
+    width:600px;
+    margin: 30px auto
+  }
+    nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  table,section {
+    width: 600px;
+  }
+  td {
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  h2{text-align: center;}
+</style>
