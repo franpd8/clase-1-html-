@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Merriweather&display=swap");
 h1,
 h2 {
   font-family: "Merriweather", serif;
+}
+h1::after {
+  content: "😀";
 }
 body {
   margin: 20px auto;
@@ -16,8 +19,8 @@ a {
 }
 
 li {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+}
 .contact {
   text-align: right;
 }
@@ -31,25 +34,28 @@ li {
   font-weight: 600;
   font-style: italic;
 }
-
 .topic {
   font-size: 18px;
   border: 2px solid rgb(187, 160, 4);
   border-radius: 10px;
   padding: 4px;
+  transition: all 0.5s ease;
+  width: 200px;
 }
-
-
-.signature{
-    font-family: 'Beau Rivage', cursive;
-    font-weight: 700;
-    font-size:26px;
+.topic:hover {
+  background-color: rgb(187, 160, 4);
+  transform: translateX(100%);
 }
-.goodbye{
-    text-align: center;
+.signature {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 700;
+  font-size: 26px;
 }
-.qt{
-   color:rgb(187, 160, 4);
-   line-height: 34px;
-   font-weight: 600;
+.goodbye {
+  text-align: center;
+}
+.qt {
+  color: rgb(187, 160, 4);
+  line-height: 34px;
+  font-weight: 600;
 }
