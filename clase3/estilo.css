@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+/* Hemos importado una tipografia de google, y usamos el estilo que nos da google
+para hacer referencia a la misma */
+p {
+  color: rgb(255, 0, 119);
+  font-family: 'Grape Nuts', cursive;
+  /* seleccionamos la fuente importada */
+}
+
+h2 {
+    background-color: beige;
+}
+
+#parrafo{
+    text-decoration: underline;
+}
+
+.clase_parrafo_2{
+    text-decoration: none;
+    /* Este estilo no afectaria porque el #id tiene más
+    relevancia que la clase, por eso no se aplica
+
+    Jerarquía: 
+
+    !important
+    estilo de línea
+    #id
+    .class
+    etiquetas;
+    
+    */
+}
+.parrafo2{
+    color:blueviolet;
+}
+
+h3 {
+    background-color: brown;
+}
+
+#encabezado3{
+    background-color: black;
+}
+
+.clase3{
+    background-color: magenta;
+}

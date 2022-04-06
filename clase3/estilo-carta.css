@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Merriweather&display=swap');
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+}
+body {
+  margin: 20px auto;
+  max-width: 700px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid black;
+  background-color: #e1dcdc;
+  margin-bottom: 2px;
+}
+
+li {
+    margin-bottom: 10px;
+  }
+.contact {
+  text-align: right;
+}
+
+.dates {
+  font-style: italic;
+}
+.university {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.topic {
+  font-size: 18px;
+  border: 2px solid rgb(187, 160, 4);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+
+.signature{
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 700;
+    font-size:26px;
+}
+.goodbye{
+    text-align: center;
+}
+.qt{
+   color:rgb(187, 160, 4);
+   line-height: 34px;
+   font-weight: 600;
+}
