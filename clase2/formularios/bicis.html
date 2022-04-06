@@ -24,13 +24,13 @@
           <th><label for="fecha">¿Cuándo la perdiste?</label><br />
             <input type="date" id="fecha" name="fecha" min="2022-01-01" max="2022-04-04" autofocus required ><br /><br />
               <label for="hora">¿Sobre qué hora?</label><br />
-              <input type="time" id="hora" name="hora">
+              <input type="time" id="hora" name="hora" required>
               <br /><br />
               <label for="color">¿De qué color es?</label><br />
               <input type="color" id="colorbici" name="colorbici" value="#000000" required>
               <br /><br />
-              <label for="precio">Precio de la bicileta (entre 0 y 500€)</label><br />
-              <input type="range" id="precio" name="precio" min="0" max="500">
+              <label for="precio">Precio de la bicileta:</label><br />
+              0 <input type="range" id="precio" name="precio" min="0" max="500"> 500€
               <br>
               <label for="modelo"> Tipo de Bicicleta</label><br>
               <!-- Este tipo de "inputs" que vienen ahora, se pueden hacer obligatorios ? -->
