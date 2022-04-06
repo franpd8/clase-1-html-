@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladronzuelos de Bicis</title>
+</head>
+<body>
+    <img
+    src="assets/bike.jpg"
+    width="600"
+  />
+  <h1>¡Al ladrón!</h1>
+  <p>
+    Lamentamos muchísimo que hayas perdido tu bicicleta, pero si nos indicas un poco más de info podemos ayudarte a buscarla.
+  </p>
+
+  <form>
+    <fieldset class="color1">
+      <legend><h3>oyeme, Carlos, llévame en tu bicicleta</h3></legend>
+      <table>
+          <tr> 
+          <th><label for="fecha">¿Cuándo la perdiste?</label><br />
+            <input type="date" id="fecha" name="fecha" min="2022-01-01" max="2022-04-04" autofocus required ><br /><br />
+              <label for="hora">¿Sobre qué hora?</label><br />
+              <input type="time" id="hora" name="hora">
+              <br /><br />
+              <label for="color">¿De qué color es?</label><br />
+              <input type="color" id="colorbici" name="colorbici" value="#000000" required>
+              <br /><br />
+              <label for="precio">Precio de la bicileta (entre 0 y 500€)</label><br />
+              <input type="range" id="precio" name="precio" min="0" max="500">
+              <br>
+              <label for="modelo"> Tipo de Bicicleta</label><br>
+              <!-- Este tipo de "inputs" que vienen ahora, se pueden hacer obligatorios ? -->
+              <select>
+                <optgroup label="Paseo">
+                   <option>Señorial</option>
+                   <option>Anti-plebeyos</option>
+                   <option>PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                   <option>Gamusinos</option>
+                   <option>Hueleflores premium</option>
+                   <option>Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option>Metroymedio</option>
+                    <option>3 de la tarde. Fluorescente edition</option>
+                    <option>Grupitors</option>
+                </optgroup>
+        </select>
+                 <br><br>
+
+                 <label for="accesorio">¿Algún accesorio junto a la bicicleta?</label>
+                 <br/>
+                 <input type="checkbox" id="accesorio1" name="accesorio1" value="Ruedines">
+                 <label for="accesorio1"> Ruedines</label><br>
+                 <input type="checkbox" id="accesorio2" name="accesorio2" value="Pegatinas">
+                 <label for="vehicle2"> Pegatinas</label><br>
+                 <input type="checkbox" id="accesorio3" name="accesorio3" value="Cestita">
+                 <label for="vehicle3"> Cestita</label><br>
+                 <input type="checkbox" id="accesorio4" name="accesorio4" value="Timbre">
+                 <label for="vehicle3"> Timbre</label><br>
+                 <input type="checkbox" id="accesorio5" name="accesorio5" value="Foco">
+                 <label for="vehicle3"> Foco</label><br>
+                 <br>
+                 <label for="marca">Marca de la bicicleta:</label>
+                    <select id="marca" name="marca">
+                        <br>
+                        <option value="specialized">specialized</option>
+                        <option value="giant">giant</option>
+                        <option value="cannondale">cannondale</option>
+                        <option value="megamo">megamo</option>
+                        <option value="cervélo">cervélo</option>
+                        <option value="orbea" selected>orbea</option>
+                        <option value="pinarello">pinarello</option>
+                        <option value="argon">argon</option>
+                    </select>
+
+              <br><br>
+              <input type="submit" value="Enviar Formulario" />
+              <input type="reset" />
+            </fieldset>
+          </th>
+          <th><img class="bici" src="assets/bici.png" width="240px"></th>
+      </tr>
+      </table>
+      
+
+    
+  </form>
+</body>
+</html>
+
+
+<style>
+    body {
+      max-width: 600px;
+      margin: 0 auto 100px;
+    }
+    th{text-align: left;}
+    img.bici{padding-left:50px;}
+    .color1{background-color: rgba(12, 80, 164, 0.315);}
+    .color2{background-color: white;}
+  </style>
+  
