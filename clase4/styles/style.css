@@ -1,18 +1,18 @@
 *{
 margin:0;
 }
+
 .flex-container{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
 }
 
-.card{
+.flex-container > .card{
     background-color: pink;
     margin:1em;
     width:10em;
     padding: 1em;
-
 }
 
 header{
@@ -21,10 +21,13 @@ header{
     background-color: aqua;
     padding: 1em;
 }
-
+nav{
+    display:flex;
+}
 a{
     all: unset;
     cursor:pointer;
+    margin-left:1em;
 }
 
 
