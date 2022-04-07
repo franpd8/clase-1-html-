@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&display=swap');
+
+:root {
+    --color1: #F7F0F5;
+    --color2: #CEC6CC;
+    --color3: #FAFFFD;
+    --color4: #EDFFEC;
+    --color5: #E0E1DD;
+  }
+  
+body{
+    margin:1em;
+    border: 2px solid var(--color1);
+    background-color: var(--color1);
+    color: #0c0c0c;
+    font-family: 'Lato'
+}
+h3{
+    font-family: 'Bodoni Moda', serif;
+}
+h4{
+    text-align: center;
+    font-weight: 400;
+    font-size:16px;
+    max-width:450px;
+    margin: 0 auto;
+
+}
+
+header,.hero,.content,.sidebar,footer{
+    padding:1em;
+    border: 2px solid var(--color1);
+    border-collapse: collapse;
+    /* margin:0 auto; */
+}
+.logo{
+    display:flex;
+    height:2em;
+    margin: 0 auto;
+}
+.news img{
+    width:100%;
+    height:auto;
+    max-height:260px;
+    max-width:400px;
+}
+.altext{
+    font-size:12px;
+}
+div>img{
+    height:260px;
+}
+footer .logo{
+    margin: 1em 0 ;
+}
+.social {
+    height:2em;
+}
+footer p{
+    font-size:12px;
+    font-weight:300;
+}
+/* Background colors of each section */
+header{
+    background-color: var(--color2);
+
+}
+.hero{
+    background-color: var(--color3);
+}
+.content{
+    background-color: var(--color1);
+}
+.sidebar{
+    background-color:var(--color1);
+}
+footer{
+    background-color:var(--color2);
+}
+
+
+.social-media a{
+    margin-right:0.5em;
+}
+
+.logo-garden{
+    text-align: center;
+}
+.logo-garden .logo{
+   margin: 1em auto;
+
+}
+/* Media Queries */
+
+.img4,.img3,.img2,.img1{
+    display:none;
+}
+.gallery{
+    display:flex;
+    justify-content: center;
+}
+/* Tablet Screen Size */
+
+ @media screen and (min-width:460px) {
+
+    section{
+        background-color: #F7F0F5;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+    section>div{
+        width:50%;
+    }
+    .img1{
+        display:flex;
+    }
+    .gallery{
+        justify-content: space-around;
+    }
+    .logo-garden{
+    display:flex;
+}
+
+.logo-garden .logo{
+    margin: 1em ;
+ 
+ }
+ .social-media{
+    margin:1em 3em;
+} 
+}
+@media screen and (min-width:500px) {
+div>img{
+    height:300px;
+}
+
+@media screen and (min-width:600px) {
+    section > div{
+        max-width: 400px; 
+    }
+    /* header,.hero{
+        padding: 1em 6em; 
+    } */
+    .content{
+        border-left: 4px solid #F7F0F5;
+    }
+    .sidebar{
+        border-right:4px solid #F7F0F5;
+    }
+
+    .gallery{
+     display:flex;
+    
+     justify-content: space-around;
+    }
+    
+} 
+}
+
+@media screen and (min-width:680px) {
+    .img2{
+        display:flex;
+    }
+}
+
+@media screen and (min-width:920px) {
+    .img3{
+        display:flex;
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+    .img4{
+        display:flex;
+    }
+}
+

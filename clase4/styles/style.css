@@ -12,7 +12,7 @@ margin:0;
     background-color: pink;
     margin:1em;
     width:10em;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 header{
@@ -24,6 +24,10 @@ header{
 nav{
     display:flex;
 }
+nav a{
+    font-size: 20px;
+}
+
 a{
     all: unset;
     cursor:pointer;
@@ -31,3 +35,14 @@ a{
 }
 
 
+
+@media  screen and (max-width: 320px) {
+    body{
+        background-color: blueviolet;
+        font-size: 10px;
+    }
+
+    nav a {
+        font-size:10px;
+    }
+}
