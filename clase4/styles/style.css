@@ -1,0 +1,30 @@
+*{
+margin:0;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: pink;
+    margin:1em;
+    width:10em;
+    padding: 1em;
+
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 1em;
+}
+
+a{
+    all: unset;
+    cursor:pointer;
+}
+
+
