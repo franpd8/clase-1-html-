@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&display=swap");
-
+/* name the var color as their color name 
+not color1, use grey or red something */
 :root {
   --color1: #f7f0f5;
   --color2: #cec6cc;
@@ -95,8 +96,7 @@ footer {
   margin: 1em auto;
 }
 
-/* Media Queries  */
-
+/* Media Queries for mobile */
 .img4,
 .img3,
 .img2,
