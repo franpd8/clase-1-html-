@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+a{
+    all:unset;
+}
+
+.LoginButton{
+    background-color: blue;
+    color: white;
+    padding:1em;
+    cursor:pointer;
+    border-radius:4px;
+
+}
+
+.LoginButton:hover{
+/* cosas que faltan */
+}
+
+.GoogleContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height:50vh;
+}
+
+.GoogleContainer input{
+    all:unset;
+    width:100%;
+}
+.InputContainer{
+    /* cosas que faltan */
+    
+}
+.search{
+    height:20px;
+    width:20px;
+    color:aliceblue;
+}
+.micro{
+    height:20px;
+    width:20px;
+}
+
+
+
+.languageContainer a{
+    color:#8ab4f8;
+    margin: 0 0.2em ;
+}
+
+.languageContainer a:hover{
+    text-decoration:underline;
+}
