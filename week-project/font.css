@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Neue Montreal;
+    src: url(assets/font/NeueMontreal-Light.otf);
+    font-weight:100;
+}
+@font-face {
+    font-family: Neue Montreal;
+    src: url(assets/font/NeueMontreal-Regular.otf);
+    font-weight:400;
+}
+@font-face {
+    font-family: Neue Montreal;
+    src: url(assets/font/NeueMontreal-Medium.otf);
+    font-weight:500;
+}
+@font-face {
+    font-family: Neue Montreal;
+    src: url(assets/font/NeueMontreal-Bold.otf);
+    font-weight:700;
+}
+@font-face {
+    font-family: Neue Montreal Book;
+    src: url(assets/font/NeueMontreal-Book.woff2);
+}
+@font-face {
+    font-family: Neue Montreal SemiBold;
+    src: url(assets/font/NeueMontreal-SemiBold.woff2);
+}
+

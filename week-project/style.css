@@ -1,0 +1,118 @@
+:root{
+    --black: #000;
+    --white: #ffffff;
+    --light: 100;
+    --regular:400;
+    --medium:500;
+    --bold: 700;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    margin:0 auto; 
+    border: solid 2px var(--white);
+    height:100vh;
+    width:100vw;
+    font-family: Neue Montreal;
+}
+a{
+    all:unset;
+    cursor: pointer;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin:4em;
+}
+
+header .title{
+    margin-top:-0.5em;
+    margin-bottom:0;
+    font-family: Neue Montreal;
+    font-weight:var(--light);
+    font-size:56px;
+}
+header .label{
+    margin-top:0;
+    margin-bottom:0;
+    font-family:Neue Montreal;
+    font-weight:var(--light);
+    font-size:24px;
+}
+header nav a{
+margin-right:1em;
+}
+
+/* .home-about{
+    /* display:flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    border: 4px solid pink;
+
+    height:70vh;
+} */
+.is-selected{
+    border-bottom:2px solid var(--white);
+}
+.about-text{
+    position:absolute;
+    right:0;
+    bottom:0;
+    border: dotted white transparent;
+    padding:1em;
+    margin: 3em;
+    max-width:550px;
+    /* margin:2em; */
+}
+
+.big-text{
+    font-weight:var(--medium);
+    font-size:64px;
+    margin-bottom:0;
+
+}
+.about-text div{
+    display:flex;
+    justify-content: flex-end;
+}
+.about-text-icon::after{
+   content:'➞'
+}
+/* .color-theme{
+    display:flex;
+    position:absolute;
+    left:0;
+    bottom:0;
+    align-content: center;  
+    align-items: center;
+    align-content: center;
+}
+.night-mode{
+    
+    margin:10px;
+    font-size:20px;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+}
+.night-mode::before{
+    content:"□ ■";
+    font-size:80px;
+    }
+    */
+
+
+
+
+/* background-gradient 
+https://codepen.io/quadbaup/full/ZEQqzqM
+ */
+.animated-gradient {
+        animation: animateBg 30s linear infinite;
+        background-image: linear-gradient(0deg,#246655,#462466,#b66d52,#a65773,#bbd2a9,#7ad5ca,#bf8145,#de863e,#aeba21,#246655,#462466);
+        background-size: 100% 1000%;
+      }
+      @keyframes animateBg {
+        0% { background-position: 0% 100%; }
+        100% { background-position: 0% 0%; }
+}
