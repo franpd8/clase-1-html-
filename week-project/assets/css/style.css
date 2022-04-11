@@ -1,0 +1,230 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+  --light: 100;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+}
+/* General styling */
+body {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  font-family: Neue Montreal;
+}
+hr {
+  height: 1px;
+  background-color: var(--white);
+}
+a {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  all: unset;
+}
+/* Underline effect */
+nav a::after,
+.about-text-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  padding-bottom: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav a:hover::after,
+.about-text-icon:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* Mark the current page */
+.is-selected {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 2px;
+}
+.is-selected:hover::after {
+  transform: scaleX(0);
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 4em;
+}
+header .title,
+header .title2 {
+  margin-top: -0.5em;
+  margin-bottom: 0;
+  font-family: Neue Montreal;
+  font-weight: var(--light);
+  font-size: 56px;
+  display: block;
+}
+header .title2 {
+  font-size: 24px;
+}
+
+header .label {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Neue Montreal;
+  font-weight: var(--light);
+  font-size: 24px;
+}
+header .label2 {
+  font-size: 18px;
+}
+header nav a {
+  margin-right: 1em;
+}
+.about-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* border: dotted white transparent; */
+  padding: 1em;
+  margin: 3em;
+  max-width: 580px;
+  /* margin:2em; */
+}
+
+/* Writing styles */
+.big-text {
+  font-weight: var(--medium);
+  font-size: 64px;
+  margin-bottom: 0;
+}
+/* Link inside the bio */
+.about-text div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* PROJECT PAGE */
+
+.project-text {
+  /* border:solid 4px blue; */
+  margin: 0 1em;
+}
+.portfolio,
+.about-page {
+  /* border:solid 3px fuchsia; */
+  margin: 100px 64px;
+  display: flex;
+}
+
+.portfolio .project-picture,
+.about-page .about-picture {
+  /* border:dotted white 5px; */
+  width: 50%;
+  max-height: 600px;
+  max-width: 600px;
+}
+.portfolio .project-picture img,
+.about-page .about-picture img {
+  width: 100%;
+  height: auto;
+}
+.portfolio .project,
+.about-page .about-me {
+  border-top: solid 1px var(--white);
+  /* border-bottom:solid 2px var(--white); */
+  width: 60%;
+  max-height: 400px;
+  position: relative;
+  /* border: 2px solid white; */
+  margin: 0 2em;
+}
+.about-page .about-me{
+    max-height:600px;
+}
+
+.portfolio .project .project-number,
+.about-page .about-me .about-number {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 14px;
+
+  /* border: 2px solid green; */
+}
+.portfolio .project .project-title,
+.about-page .about-me .about-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-family: Neue Montreal;
+  font-weight: var(--black);
+}
+.portfolio .project .project-title:hover,
+.about-page .about-me .about-title:hover {
+  opacity: 0.8;
+}
+
+.portfolio .project .project-description,
+.about-page .about-me .about-description {
+  margin-bottom: 20px;
+  font-weight: var(--light);
+  /* border: 2px solid yellow; */
+}
+.portfolio .project .project-tags,
+.about-page .about-me .about-skills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* border: 2px solid red; */
+}
+
+
+
+
+/* background-gradient 
+https://codepen.io/quadbaup/full/ZEQqzqM
+ */
+.animated-gradient-background {
+  animation: animateBg 30s linear infinite;
+  background-image: linear-gradient(
+    0deg,
+    #246655,
+    #462466,
+    #b66d52,
+    #a65773,
+    #bbd2a9,
+    #7ad5ca,
+    #bf8145,
+    #de863e,
+    #aeba21,
+    #246655,
+    #462466
+  );
+  background-size: 100% 1000%;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.body {
+  background-color: #121212;
+}
