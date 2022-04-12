@@ -34,6 +34,18 @@ h5,
 h6 {
   all: unset;
 }
+
+.stroke{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--white);
+  color:var(--white);
+}
+.stroke:hover{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  color:var(--black);
+}
+
 /* Underline effect */
 nav a::after,
 .about-text-icon::after {
@@ -122,8 +134,11 @@ header nav a {
 
 .project-text {
   /* border:solid 4px blue; */
-  margin: 0 1em;
+  margin: 0 1em; 
+  display:inline-block;
 }
+
+
 .portfolio,
 .about-page {
   /* border:solid 3px fuchsia; */
@@ -193,9 +208,61 @@ header nav a {
   /* border: 2px solid red; */
 }
 
+.contact-text{
+  border:2px solid white;
+  display:block;
+  max-width:1000px;
+  margin: 64px auto;
+}
+.contact-text form{
+  margin: 0 auto;
+}
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+.input-group{
+  display:flex;
+  justify-content: flex-start;
+  border: 2px solid pink;
+}
+.input-group label{
+  display: inline-block;
+}
+.input-group input{
+    text-align: center;
+    border: solid;
+    border-width: 0 0 1px;
+    background-color: pink; 
+    outline: none;
+    padding:3em 3em 1em;
+
+} 
 
 
+.padre{
+  display:flex;
+  justify-content: flex-start;
+  width:70vw;
+  margin:2em auto;
+  border: 2px solid pink; 
+}
 
+.hijo.izq{
+  display:inline-block;
+  
+ 
+  border:2px solid yellow;
+  margin: 1em;
+}
+.hijo.der{
+  display:block;
+  border: 2px solid blue;
+  width:100%;
+  margin: 1em;
+
+  
+}
 /* background-gradient 
 https://codepen.io/quadbaup/full/ZEQqzqM
  */
