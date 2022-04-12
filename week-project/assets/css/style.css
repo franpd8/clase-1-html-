@@ -207,7 +207,6 @@ header nav a {
   left: 0;
   /* border: 2px solid red; */
 }
-
 .contact-text{
   border:2px solid white;
   display:block;
@@ -220,14 +219,15 @@ header nav a {
 *, *:before, *:after {
   box-sizing: border-box; 
 }
-
 .input-group{
   display:flex;
   justify-content: flex-start;
+  align-items: center;
   border: 2px solid pink;
 }
 .input-group label{
   display: inline-block;
+  width: max-content;
 }
 .input-group input{
     text-align: center;
@@ -236,33 +236,13 @@ header nav a {
     background-color: pink; 
     outline: none;
     padding:3em 3em 1em;
-
+    background-color: transparent;
+    color: pink;
+    text-align: start;
+    font-size: 20px;
+    width:max-content;
 } 
-
-
-.padre{
-  display:flex;
-  justify-content: flex-start;
-  width:70vw;
-  margin:2em auto;
-  border: 2px solid pink; 
-}
-
-.hijo.izq{
-  display:inline-block;
   
- 
-  border:2px solid yellow;
-  margin: 1em;
-}
-.hijo.der{
-  display:block;
-  border: 2px solid blue;
-  width:100%;
-  margin: 1em;
-
-  
-}
 /* background-gradient 
 https://codepen.io/quadbaup/full/ZEQqzqM
  */
