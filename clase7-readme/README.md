@@ -4,6 +4,8 @@
 
 Descripción del proyecto. Contamos un poco lo que hemos hecho en este proyecto o qué queríamos hacer. 
 
+_Texto cursiva_
+gi
 
 ## Tecnologías 
 
