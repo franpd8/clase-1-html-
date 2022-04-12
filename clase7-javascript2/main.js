@@ -82,3 +82,12 @@ if ( capacidad < 2 ){
 
 
 
+// Crear variable contarHasta10 con valor 0 e incrementar su valor con un bucle hasta que se verifique que contarHasta10 === 10
+
+const contarHasta10 = 0
+
+for (let i =0; i < 10; i++){
+    contarHasta10 += 1;
+    console.log(contarHasta10)
+}
+//  Tampoco me funciona
