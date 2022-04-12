@@ -25,7 +25,6 @@ a {
   display: inline-block;
   position: relative;
 }
-
 h1,
 h2,
 h3,
@@ -34,37 +33,15 @@ h5,
 h6 {
   all: unset;
 }
-
-.stroke{
+.stroke {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--white);
-  color:var(--white);
+  color: var(--white);
 }
-.stroke:hover{
+.stroke:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);
-  color:var(--black);
-}
-
-/* Underline effect */
-nav a::after,
-.about-text-icon::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  padding-bottom: 1px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--white);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-nav a:hover::after,
-.about-text-icon:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  color: var(--black);
 }
 /* Mark the current page */
 .is-selected {
@@ -74,7 +51,6 @@ nav a:hover::after,
 .is-selected:hover::after {
   transform: scaleX(0);
 }
-
 /* Header styling */
 header {
   display: flex;
@@ -107,24 +83,24 @@ header .label2 {
 header nav a {
   margin-right: 1em;
 }
+
+/* ABOUT PAGE */
 .about-text {
   position: absolute;
   right: 0;
   bottom: 0;
-  /* border: dotted white transparent; */
   padding: 1em;
   margin: 3em;
-  max-width: 580px;
-  /* margin:2em; */
+  max-width: 600px;
 }
-
-/* Writing styles */
+.about-text .big-text::after {
+  content: "🍊";
+}
 .big-text {
   font-weight: var(--medium);
   font-size: 64px;
   margin-bottom: 0;
 }
-/* Link inside the bio */
 .about-text div {
   display: flex;
   justify-content: flex-end;
@@ -133,22 +109,18 @@ header nav a {
 /* PROJECT PAGE */
 
 .project-text {
-  /* border:solid 4px blue; */
-  margin: 0 1em; 
-  display:inline-block;
+  margin: 0 64px;
+  display: inline-block;
 }
-
 
 .portfolio,
 .about-page {
-  /* border:solid 3px fuchsia; */
   margin: 100px 64px;
   display: flex;
 }
 
 .portfolio .project-picture,
 .about-page .about-picture {
-  /* border:dotted white 5px; */
   width: 50%;
   max-height: 600px;
   max-width: 600px;
@@ -158,20 +130,20 @@ header nav a {
   width: 100%;
   height: auto;
 }
+
 .portfolio .project,
 .about-page .about-me {
   border-top: solid 1px var(--white);
-  /* border-bottom:solid 2px var(--white); */
   width: 60%;
   max-height: 400px;
   position: relative;
-  /* border: 2px solid white; */
   margin: 0 2em;
 }
-.about-page .about-me{
-    max-height:600px;
+.about-page .about-me {
+  max-height: 600px;
 }
 
+/* PROJECT PAGE */
 .portfolio .project .project-number,
 .about-page .about-me .about-number {
   display: flex;
@@ -179,8 +151,6 @@ header nav a {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 14px;
-
-  /* border: 2px solid green; */
 }
 .portfolio .project .project-title,
 .about-page .about-me .about-title {
@@ -189,8 +159,7 @@ header nav a {
   font-family: Neue Montreal;
   font-weight: var(--black);
 }
-.portfolio .project .project-title:hover,
-.about-page .about-me .about-title:hover {
+.portfolio .project .project-title:hover {
   opacity: 0.8;
 }
 
@@ -198,51 +167,254 @@ header nav a {
 .about-page .about-me .about-description {
   margin-bottom: 20px;
   font-weight: var(--light);
-  /* border: 2px solid yellow; */
 }
-.portfolio .project .project-tags,
-.about-page .about-me .about-skills {
+.portfolio .project .project-tags {
   position: absolute;
   bottom: 0;
   left: 0;
-  /* border: 2px solid red; */
 }
-.contact-text{
-  border:2px solid white;
-  display:block;
-  max-width:1000px;
+
+/* CONTACT PAGE */
+.contact-text {
+  display: block;
+  max-width: 1000px;
   margin: 64px auto;
 }
-.contact-text form{
+.contact-text form {
   margin: 0 auto;
 }
-*, *:before, *:after {
-  box-sizing: border-box; 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-.input-group{
-  display:flex;
-  justify-content: flex-start;
+.input-group {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  border: 2px solid pink;
 }
-.input-group label{
-  display: inline-block;
+.input-group label {
+  display: block;
   width: max-content;
+  line-height: 1.4;
 }
-.input-group input{
-    text-align: center;
-    border: solid;
-    border-width: 0 0 1px;
-    background-color: pink; 
-    outline: none;
-    padding:3em 3em 1em;
-    background-color: transparent;
-    color: pink;
-    text-align: start;
-    font-size: 20px;
-    width:max-content;
-} 
-  
+.input-group input,
+.input-group textarea,
+.submit {
+  font-family: Neue Montreal;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  padding: 1em 3em 1em;
+  border: none;
+  border-bottom: 2px solid white;
+  color: var(--white);
+  font-size: 20px;
+  width: 50%;
+}
+.input-group textarea {
+  padding: 2em 3em 0em;
+  resize: vertical;
+}
+.submit-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.submit {
+  margin: 6em 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  padding: 1em;
+  border: none;
+  color: var(--black);
+  background-color: var(--white);
+  transform: scale(1);
+  transition: transform 0.5s linear;
+}
+.submit:hover {
+  transform: scale(1.2);
+  transition: 0.5s linear;
+}
+
+.contact-me {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  .about-text {
+    position: relative;
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+  .big-text {
+    font-size: 48px;
+  }
+  .contact-text {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .big-text {
+    font-size: 40px;
+  }
+  .contact-text {
+    max-width: 600px;
+  }
+  .portfolio .project .project-title,
+  .about-page .about-me .about-title {
+    font-size: 26px;
+  }
+  .input-group input,
+  .input-group textarea,
+  .submit {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .portfolio {
+    margin: 80px 64px;
+    display: block;
+  }
+  .portfolio .project-picture,
+  .portfolio .project {
+    width: 80%;
+  }
+  .portfolio .project .project-tags {
+    position: relative;
+  }
+  .portfolio .project {
+    border-top: solid 1px var(--black);
+    margin: 0 auto;
+  }
+  .input-group {
+    display: block;
+  }
+  .contact-text {
+    width: 80%;
+  }
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 2em;
+  }
+  .project-text {
+    margin: 0 32px;
+  }
+  .portfolio,
+  .about-page {
+    margin: 80px 32px;
+    display: block;
+  }
+  .portfolio .project-picture,
+  .portfolio .project {
+    width: 100%;
+  }
+  .about-page {
+    display: block;
+  }
+  .about-picture,
+  .about-me {
+    margin: 0 auto;
+  }
+  .about-page .about-me {
+    border-top: solid 1px var(--black);
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-page .about-me .about-number {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    display: block;
+  }
+  .site-header {
+    margin-bottom: 1em;
+  }
+  nav a:hover::after,
+  .about-text-icon:hover::after {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+  .contact-text {
+    justify-content: center;
+    margin: 64px 32px;
+    width: 80%;
+  }
+  .about-text {
+    justify-content: center;
+    margin: 0 1em;
+    max-width: 100%;
+  }
+  .about-page .about-picture {
+    width: 100%;
+  }
+  .about-page h3 {
+    font-size: 18px;
+  }
+}
+
+/* EXTERNAL CODES */
+
+/* Underline effect
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+*/
+nav a::after,
+.about-text-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  padding-bottom: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav a:hover::after,
+.about-text-icon:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* zooming images inside div 
+https://codepen.io/lucy_wheel/pen/VxYzKP
+https://codeconvey.com/pure-css-image-zoom-on-hover-inside-a-div/
+
+*/
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 540px;
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.6s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+.image-box:hover img {
+  transform: scale(1.1);
+}
 /* background-gradient 
 https://codepen.io/quadbaup/full/ZEQqzqM
  */
@@ -271,7 +443,4 @@ https://codepen.io/quadbaup/full/ZEQqzqM
   100% {
     background-position: 0% 0%;
   }
-}
-.body {
-  background-color: #121212;
 }
