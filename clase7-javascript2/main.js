@@ -65,20 +65,18 @@ if(A === B){
 // Crea una variable mochila que sea un array de elementos, desarrolla la lógica para que sí mochila tiene más de 10 elementos muestre por consola el mensaje “No puedo cargar con tantas cosas”, sí mochila contiene entre 10 y 2 elementos se muestre por consola “Que bien voy con mi mochila” y si no muestre por consola “Creo q no necesito una mochila”
 console.log("Ejercicio mochila")
 
-const mochila = [1,,2,3,4,5,6,7,8,9,10,11]
+const mochila = [1,,2,3,4,5]
 console.log(mochila.length)
 
 const capacidad = mochila.length
 console.log("Capacidad =", capacidad)
-
-if ( capacidad < 2 ){
-    console.log("Creo que no necesito mochila")
-} else if (  2 <= capacidad <= 10 ){
-    console.log("Que bien voy con mi mochila")
+if (capacidad < 2 ){
+    console.log("Creo que no necesito mochila vers")
+} else if (  (2 <= capacidad) && (capacidad < 10) ){
+    console.log("Que bien voy con mi mochila vers")
 } else {
     console.log("No puedo cargar con tantas cosas")
 } 
-// No funciona bien, debería sacar el último mensaje y no lo hace.
 
 
 
@@ -86,8 +84,8 @@ if ( capacidad < 2 ){
 
 const contarHasta10 = 0
 
-for (let i =0; i < 10; i++){
-    contarHasta10 += 1;
-    console.log(contarHasta10)
-}
-//  Tampoco me funciona
+// for (let i =0; i < 10; i++){
+//     contarHasta10 += 1;
+//     console.log(contarHasta10)
+// }
+// //  Tampoco me funciona
